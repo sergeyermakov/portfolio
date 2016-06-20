@@ -1,0 +1,271 @@
+.header {
+    background: url(/assets/img/portfoliobg.jpg)center center no-repeat;
+    text-align: center;
+    color: #fff;
+
+    .bot-border {
+        width: 100%;
+        height: 175px;
+        background: url(/assets/img/header-border.png)50% 100% no-repeat;
+        background-size: contain;
+    }
+    .name {
+    	font-size: 35px;
+    	line-height: 99px;
+    	font-weight: 500;
+    }
+    .desc {
+		font-weight: 300;
+    }
+}
+
+.section-works {
+    background: #faf8f0;
+    .section-heading {
+        height: 165px;
+        line-height: 165px;
+        background: url(/assets/img/works.png) center center no-repeat;
+    }
+}
+
+.section-heading {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'BERNIER';
+    font-size: 63px;
+    line-height: 66px;
+    color: #373e42;
+    text-transform: uppercase;
+    &:before,
+    &:after {
+        position: absolute;
+        top: 80px;
+        display: block;
+        content: ' ';
+        width: 22px;
+        height: 5px;
+        background: rgba(#373e42, .2);
+    }
+    &:before {
+        left: 100px;
+    }
+    &:after {
+        right: 100px;
+    }
+}
+
+.slider-container {
+    width: 100%;
+    height: auto;
+    background: #f0efe9;
+}
+
+.slider-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slide-desc {
+    display: inline-block;
+    width: 50%;
+    background: #f0efe9;
+    color: #fff;
+    text-align: center;
+    float: left;
+    padding-top: 15%;
+}
+
+.h2 {
+	width: 345px;
+	margin: 0 auto;
+	position: relative;
+	font-family: 'BERNIER';
+    font-size: 35px;
+    line-height: 41px;
+    color: #455a64;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    &:before,
+    &:after {
+        position: absolute;
+        top: 20px;
+        display: block;
+        content: ' ';
+        width: 22px;
+        height: 5px;
+        background: rgba(#373e42, .2);
+    }
+    &:before {
+        left: 0px;
+    }
+    &:after {
+        right: 0px;
+    }
+}
+
+.slide-tehnologies {
+	width: 420px;
+	margin: 0 auto;
+	font-weight: 500;
+	padding: 20px 0;
+	border-top: 1px solid #20b5a1;
+	border-bottom: 1px solid #20b5a1;
+	color: #20b5a1;
+	margin-bottom: 40px;
+}
+
+.link-btn {
+	background:#00bfa5;
+	border: none;
+	&:hover {
+		background: lighten(#00bfa5, 2);
+	}
+}
+.slide-img-container {
+    width: 50%;
+    background: #efebe0;
+    float: right;
+}
+
+.slide-img {
+    width: 100%;
+    max-width: 605px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.slide-img img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-arrows {
+    width: 50%;
+    float: right;
+    clear: right;
+}
+
+.arrow-prev,
+.arrow-next {
+    display: block;
+    width: 50%;
+    float: left;
+    color: #fff;
+    text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.arrow-prev:before,
+.arrow-next:before {
+	display: block;
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	background:rgba(#b6b4ae, .8);
+}
+
+.arrow-prev:hover:before,
+.arrow-next:hover:before {
+	background:rgba(#b6b4ae, .65);
+}
+.arrow-prev:after,
+.arrow-next:after {
+	display: block;
+	position: absolute;
+	content: ' ';
+	width: 43px;
+	height: 27px;
+	top: 50%;
+	margin-top: -13px;
+	left: 50%;
+	margin-left: -21px;
+}
+.arrow-prev:after {
+	background:url(../img/icons/portf_arrow_down.svg);
+}
+.arrow-next:after {
+	background:url(../img/icons/portf_arrow_up.svg);
+}
+
+.arrow-prev img,
+.arrow-next img{
+    width: 100%;
+    height: auto;
+}
+
+.section-about {
+	background:url(../img/bg-about.png) top center no-repeat;
+	text-align: center;
+	.section-heading {
+		height: 175px;
+		line-height: 82px;
+		background: url(../img/about.png) center center no-repeat;
+	}
+}
+
+.reviews {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+
+	.review {
+
+		margin: 10px;
+		display: inline-block;
+		width: 380px;
+		text-align:left;
+		margin-bottom: 70px;
+		.quoteleft{
+			
+			font-size: 36px;
+			line-height: 81px;
+			color: rgba(#373e42, .2);
+			display: block;
+		}
+		.review-text {
+			font-weight: 400;
+			line-height: 26px;
+			color: #455a64;
+			margin-bottom: 28px;
+		}
+		.reviewphoto {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+		.review-whois {
+			display: inline-block;
+			vertical-align: middle;
+			color: #20b5a1;
+		}
+	}
+}
+
+.form-panel {
+	margin: 0 auto;
+	.panel-menu {
+		width: 100%;
+	}
+	.panel-menu_menu-item {
+		width: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

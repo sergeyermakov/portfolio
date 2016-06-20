@@ -1,0 +1,124 @@
+$pcolor: #00bfa5;
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic';
+
+@font-face {
+	font-family: 'BERNIER';
+	src: url('../fonts/BERNIERRegular-Regular.eot');
+	src: url('../fonts/BERNIERRegular-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BERNIERRegular-Regular.woff') format('woff'),
+		url('../fonts/BERNIERRegular-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Fontawesome';
+	src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.fa-icon {
+	font-family: 'Fontawesome';
+}
+
+.icon {
+	display: inline-block;
+	width: 28px;
+	height: 23px;
+	opacity: .7;
+	&:hover {
+		opacity: 1
+	}
+}
+
+.socials {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 35px;
+	left: 30px;
+	
+	.social-item {
+		margin-right: 10px;
+		display: inline-block;
+
+	}
+}
+
+.icon-vk{
+	background:url(../img/icons/vk.svg) center center no-repeat;
+}
+.icon-in{
+	background:url(../img/icons/in.svg) center center no-repeat;
+}
+.icon-github{
+	background:url(../img/icons/github.svg) center center no-repeat;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0 27px;
+    line-height: 43px;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background: rgba(#fff, .2);
+    }
+}
+
+.wrap {
+    min-height: 100%;
+    position: relative;
+    background: url(../img/bg.jpg) center center no-repeat;
+    [rel="main"] {
+        padding-bottom: 30px;
+    }
+    footer {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        left: 0;
+        bottom: 0;
+        color: #fff;
+    }
+}
+
+@import 'common/welcome';
+@import 'common/about';
+
+
+
+
+
