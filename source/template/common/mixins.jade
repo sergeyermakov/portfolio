@@ -1,0 +1,23 @@
+mixin header(svgheaderlink)
+	header.header
+		ul.socials
+			li.social-item
+				a.icon.icon-vk(href='http://vk.com' target='_blank')
+			li.social-item
+				a.icon.icon-github(href='http://vk.com' target='_blank')
+			li.social-item
+				a.icon.icon-in(href='http://vk.com' target='_blank')
+		img.svgheader(src=svgheaderlink)
+		.block
+			img.panel_photo(src="assets/img/photo.png")
+			.name Сергей Ермаков
+			.desc Личный сайт веб разработчика
+		.bot-border
+			|<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 175" preserveAspectRatio="none"><polygon points="0,0  0,175  1001,175"></polygon><polygon points="2000,0  999,175  2000,175"></polygon></svg>
+
+mixin section-header(text, svglink)
+	.section-heading
+		img.svgheading(src=svglink)
+		.heading-text_wrap
+			span.heading-text= text
+		
