@@ -7,13 +7,29 @@ mixin header
 				a.icon.icon-github(href='http://vk.com' target='_blank')
 			li.social-item
 				a.icon.icon-in(href='http://vk.com' target='_blank')
+		.nav-icon
+			span
+			span
+			span
+		nav.main-menu
+			ul.main-menu_list
+				li.main-menu_item
+					a.main-menu_item-link(href="#") Мои работы
+				li.main-menu_item
+					a.main-menu_item-link(href="#") Блог
+				li.main-menu_item
+					a.main-menu_item-link(href="#") Обо мне
+				li.main-menu_item
+					a.main-menu_item-link(href="#") Авторизация
+
 		img.svgheader(src="assets/img/icons/portfolio_header.svg")
 		.block
 			img.panel_photo(src="assets/img/photo.png")
 			.name Сергей Ермаков
 			.desc Личный сайт веб разработчика
 		.bot-border
-			|<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 175" preserveAspectRatio="none"><polygon points="0,0  0,175  1001,175"></polygon><polygon points="2000,0  999,175  2000,175"></polygon></svg>
+			|<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 175" preserveAspectRatio="none"><polygon class="left"points="0,0  0,175  1001,175"></polygon><polygon class="right"points="2000,0  999,175  2000,175"></polygon>
+			</svg>
 
 mixin section-header(text, svglink)
 	.section-heading
