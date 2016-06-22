@@ -1,4 +1,56 @@
 include common/_head.jade
-.wrap
-	+header('assets/img/icons/about_header.svg')
+.wrap.about
+	+header
+	section.about-me.clearfix
+		.left
+			+section-header('Обо мне', 'assets/img/icons/about_header.svg')
+			.content
+				img.big-photo(src="assets/img/big-photo.jpg")
+				h2.h2 Кто я
+				p
+				| Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+				p
+				| Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+		.right
+			h2.h2 Чем я могу быть вам полезен
+			p
+			| Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+			h3.h3 Frontend
+			ul.skills
+				li.skill.html
+					span.skill-name HTML5
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.css
+					span.skill-name CSS3
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.js
+					span.skill-name JavaScript & JQuery
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+			h3.h3 Backend
+			ul.skills
+				li.skill.php
+					span.skill-name PHP
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.mysql
+					span.skill-name mySQL
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.mode
+					span.skill-name Node.js & npm
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.mongo
+					span.skill-name Mongodb
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+			h3.h3 Workflow
+			ul.skills
+				li.skill.git
+					span.skill-name Git
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.gulp
+					span.skill-name Gulp
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+				li.skill.bower
+					span.skill-name Bower
+					| <svg width="155" height="155" class="g-circles"><circle r="65"  cx="78" cy="78" stroke="#ccc" fill="none"/><circle r="65" cx="78" cy="78" stroke="#6c9c5a" transform="rotate(-90 78 78)" class="sector"/></svg>
+	section.section-map
+		div#map
 include common/_footer
